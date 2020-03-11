@@ -2,7 +2,7 @@ package vlad.duncea.lab3;
 
 public class Maximum {
 
-    int nr;
+    private int nr;
 
     public Maximum()
     {
