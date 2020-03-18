@@ -36,4 +36,24 @@ public class Circle
     public String getColour() {
         return colour;
     }
+
+    public double getArea()
+    {
+        return Math.PI * radius*radius;
+    }
+
+    @Override
+    public String toString() {
+        return "Circle: r= " + radius + ", colour= '" + colour + "'";
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if(o == null || o.getClass() != getClass())
+            return false;
+        Circle c = (Circle) o;
+
+        return c.radius == radius && c.colour.equals(colour);
+    }
+
 }
